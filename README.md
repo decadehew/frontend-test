@@ -15,12 +15,14 @@
 - [x] 5. Info區塊資料會直接由前頁點選資料提供
 - [x] 6. Info以下資料，會透過上一個API取得，並且render
 
-## 說明
+## 說明及如何實現
 
 - 使用原生JS fetch API get 資料
 - 使用第三方library **lodash** orderBy進行排序
 - 使用原生JS filter 來過濾資料
 - 使用vue-router plugin來讀取點選contact name後， 傳入參數給**/info**，取得參數裡資料。達到無需refresh。
+- 當在info頁面，可以點擊左上方 nav breadcrumb -> Home，回到Service point 頁面
+- **[注意]** 此API，每天請求次數不能超過200次以上。
 
 > 題外，發現vue-cli已更新成3.0，查看2.x和3.x差別 [官網](https://cli.vuejs.org/)
 
@@ -29,7 +31,7 @@
 
 ``` bash
 # switch folder
-cd hyenatek
+cd frontend-test
 
 # install dependencies
 npm install
