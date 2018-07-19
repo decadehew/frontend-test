@@ -44,7 +44,11 @@ export default {
             const h = Math.floor(second / 3600);
             const m = Math.floor(second % 3600 / 60);
 
-            return ('0' + h).slice(-2) + ":" + ('0' + m).slice(-2);
+            if(second === undefined) {
+                return '00: 00';
+            } else {
+                return ('0' + h).slice(-2) + ": " + ('0' + m).slice(-2);
+            }
         }
     },
 };
