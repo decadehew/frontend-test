@@ -75,7 +75,6 @@ export default {
 			search: '',
 			sortingKey: '',
 			direction: 'asc',
-
 		};
 	},
   	methods: {
