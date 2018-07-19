@@ -106,7 +106,7 @@ export default {
 	computed: {
 		filteredSearch() {
 			return this.serviceData.filter(data => {
-				return data.contact.toLowerCase().match(this.search);
+				return data.contact.toLowerCase().match(this.search.toLowerCase());
 			});
 		}
 	}
