@@ -4,7 +4,7 @@
 			<thead>
 				<tr>
 					<th scope="col">Component</th>
-					<th scope="col">Cick</th>
+					<th scope="col">Click</th>
 					<th scope="col">Pass</th>
 					<th scope="col">Fails</th>
 					<th scope="col">Bike count</th>
